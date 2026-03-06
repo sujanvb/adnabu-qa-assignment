@@ -23,8 +23,8 @@ Make sure the following software is installed:
 
 Clone the repository:
 
-git clone <your-repository-url>
-cd <repository-folder>
+git clone https://github.com/sujanvb/adnabu-qa-assignment.git
+cd adnabu-qa-assignment
 
 Install required dependencies:
 
