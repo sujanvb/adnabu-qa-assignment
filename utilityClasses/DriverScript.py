@@ -12,6 +12,17 @@ class DriverScript:
             service = Service(ChromeDriverManager().install())
             options = webdriver.ChromeOptions()
             options.add_argument("--start-maximized")
+            
+            # Disable cache
+            options.add_argument("--disable-application-cache")
+            options.add_argument("--disk-cache-size=0")
+
+            # Disable cookies/session reuse by using incognito
+            options.add_argument("--incognito")
+
+            # Disable extensions and background apps
+            options.add_argument("--disable-extensions")
+            options.add_argument("--disable-plugins")
 
             DriverScript.driver = webdriver.Chrome(service=service, options=options)
 
